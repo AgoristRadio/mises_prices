@@ -27,7 +27,7 @@ Or install it yourself as:
 
 ## Example
 
-'''
+```ruby
 pry -r "./lib/mises_prices" # If you git cloned
 or
 pry require 'mises_prices' # If you are using the gem
@@ -56,7 +56,7 @@ pry require 'mises_prices' # If you are using the gem
  [9] pry(main)> p.quote_human :xxx
  => "Error: Invalid Currency XXX. Valid Currencies: USD, CNY, JPY, SGD, HKD, CAD, AUD, NZD, GBP, DKK, SEK, BRL, CHF, EUR, RUB, SLL, PLN, THB"
  [10] pry(main)>
-'''
+```
 
 ## Contributing
 
