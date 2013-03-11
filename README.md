@@ -30,8 +30,10 @@ Or install it yourself as:
 ```ruby
 pry -r "./lib/mises_prices" # If you git cloned
 or
-pry require 'mises_prices' # If you are using the gem
+pry
+[1] pry(main)> require 'mises_prices' # If you are using the gem
 
+# Lets get some prices
 [1] pry(main)> p = MisesPrices::blockchaininfo
  [2] pry(main)> p.help
  => ["blockchain.info: \"15m\" is the 15 minutes delayed market price, \"24h\" is the 24 hour
