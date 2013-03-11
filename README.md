@@ -1,8 +1,30 @@
 # MisesPrices
 
-NOTE: Don't Use gem from ruby gems yet, not ready Yet. Packaging up etc now.
+## Easy to use Market Price Discovery Ruby Library.
 
-Playing with this with git clone is fine.
+Not exactly what Austrian Economists meant
+by 'price discovery', but a great way to find prices from loads of markets
+and use in your apps, IRC/XMPP bots, or even on the command line.
+
+NOTE: Don't Use gem from ruby gems yet, not ready Yet. Packaging up etc now.
+Playing with a git clone is fine.
+
+Current Market Price Providers Implemented:
+
+ * Blockchain.info
+
+Future Market Price Providers:
+
+ * MTGox, BTC-e, Vircuex
+ * Bitcoin MPex, CryptoStocks
+ * BitcoinCharts
+ * Coinabul
+ * Kitco
+ * Open-Transaction Markets
+ * Ripple Markets
+ * Forex/Currency Markets
+
+
 
 
 ## TODO
@@ -58,7 +80,7 @@ pry
  # Lets get some prices
 
  [5] pry(main)> p.quote "USD"
- => {"15m"=>47.42627,"last"=>47.42627,"buy"=>47.34657,"sell"=>47.42627,"24h"=>45.67,bol"=>"$"}
+ => {"15m"=>47.42627,"last"=>47.42627,"buy"=>47.34657,"sell"=>47.42627,"24h"=>45.67,"symbol"=>"$"}
  [6] pry(main)> p.quote :usd
  => {"15m"=>47.42627,"last"=>47.42627,"buy"=>47.34657,"sell"=>47.42627,"24h"=>45.67,"symbol"=>"$"}
   [7] pry(main)> p.quote :usd, 'last'
