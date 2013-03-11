@@ -1,11 +1,13 @@
 # MisesPrices
 
-TODO: Don't Use this Yet. Packaging up etc now.
+NOTE: Don't Use gem from ruby gems yet, not ready Yet. Packaging up etc now.
+
+Playing with this with git clone is fine.
+
 
 ## TODO
 
  * Handle Net Exceptions
- * Trap invalid currency, or other parameters
 
 ## Installation
 
@@ -21,11 +23,7 @@ Or install it yourself as:
 
     $ gem install mises_prices
 
-## Usage
-
-
-
-## Example
+## Example Usage in Pry
 
 ```ruby
 pry -r "./lib/mises_prices" # If you git cloned

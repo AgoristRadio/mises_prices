@@ -7,9 +7,10 @@ module MisesPrices
 
     def help
       ['blockchain.info: "15m" is the 15 minutes delayed market price, "24h" is the 24 hour average market price, "symbol" is the currency symbol.',
-       "currencies  | List all currency prices provided. i.e. USD, EUR",
+       "quote_currencies  | List all currency prices provided. i.e. USD, EUR",
        "quote_types  | List all quote types available for each currency. i.e. Last, 24h",
-       "quote currency [type=all]  | Get a quote for a currency, type optional.",
+       "quote currency [type=all]  | Get all quotes for a currency, type optional.",
+       "quote_with_symbol currency [type=all]  | Get pretty formated price quote for a currency, type optional.",
        "quote_human currency | Get a nice human string for a currency. Good for IRC/XMPP etc."
       ]
     end
