@@ -31,8 +31,17 @@ or
 pry
 [1] pry(main)> require 'mises_prices' # If you are using the gem
 
-# Lets get some prices
+# Lets see a list of market price providers
+
+[1] pry(main)> MisesPrices::providers
+=> ["blockchaininfo"]
+
+# Lets use the blockchaininfo prrovider
+
 [1] pry(main)> p = MisesPrices::blockchaininfo
+
+# Lets see what is available
+
  [2] pry(main)> p.help
  => ["blockchain.info: \"15m\" is the 15 minutes delayed market price, \"24h\" is the 24 hour
  average market price, \"symbol\" is the currency symbol.",
@@ -45,6 +54,9 @@ pry
  "RUB","SLL","PLN","THB"]
  [4] pry(main)> p.quote_types
  => ["15m", "last", "buy", "sell", "24h", "symbol"]
+
+ # Lets get some prices
+
  [5] pry(main)> p.quote "USD"
  => {"15m"=>47.42627,"last"=>47.42627,"buy"=>47.34657,"sell"=>47.42627,"24h"=>45.67,bol"=>"$"}
  [6] pry(main)> p.quote :usd
